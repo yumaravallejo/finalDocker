@@ -2,7 +2,7 @@
 
 Es necesario descargar primero los archivos necesarios o hacer pull del repositorio https://github.com/yumaravallejo/finalDocker
 
-##1. Iniciar los servicios
+## 1. Iniciar los servicios
 Si se crea con docker compose la primera vez se usará 
 ```
 docker-compose up -d
@@ -20,7 +20,7 @@ Para crear un contenedor
 docker run [opciones] nombre_imagen 
 ```
 
-###Opciones
+### Opciones
 --name nombre_contenedor --> dar un nombre al contenedor
 -p puerto_local:puerto_maquina --> ponerle un puerto de escucha
 -d --> activar en segundo plano
@@ -34,7 +34,7 @@ Para empezar un contenedor ya creado
 docker start nombre_imagen 
 ```
 
-##2. Detener los servicios
+## 2. Detener los servicios
 Para el docker compose use usará
 ```
 docker-compose down
@@ -48,7 +48,7 @@ Para borrar un contenedor
 docker rm nombre_contenedor
 ```
 
-##3. Actualizar los servicios
+## 3. Actualizar los servicios
 Lo cerramos, agregamos cambios al dockerfile o docker-compose y lo volvemos a construir y lanzar
 ```
 docker-compose down
@@ -56,7 +56,7 @@ docker-compose build
 docker-compose up
 ```
 
-##4. Gestionar los logs de los contenedores
+## 4. Gestionar los logs de los contenedores
 Para poder saber qué está ocurriendo en un contenedor, si va todo bien, si falla algo... existen los logs. Para poder llamarlo debemos escribir
 ```
 docker logs nombre_contenedor
